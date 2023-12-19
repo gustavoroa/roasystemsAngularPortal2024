@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { API_LANGUAGES_URL, API_LOGIN_URL  } from '../shared/constants/constants';
 import { LanguagesListComponent } from './languages-list/languages-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LanguagesListComponent } from './languages-list/languages-list.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: 'API_Languages_URL', useValue: API_LANGUAGES_URL },
